@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "(((APC)))",
+    "slug": "apc",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "connect4v",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.connect4v.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to scan QR codes",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access to get QR codes from images",
+        "NSPhotoLibraryAddUsageDescription": "This app needs photo library access to save QR codes",
+        "NSLocationWhenInUseUsageDescription": "This app needs location access for finding nearby devices",
+        "NSContactsUsageDescription": "This app needs access to your contacts to allow you to select phone numbers for authorization."
+      }
+    },
+    "android": {
+      "package": "com.connect4v.app",
+      "permissions": [
+        "SEND_SMS",
+        "READ_SMS",
+        "RECEIVE_SMS",
+        "android.permission.READ_CONTACTS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8fa38020-8f63-4ff1-8501-86b0577570f5"
+      }
+    },
+    "fonts": [
+      {
+        "asset": "./assets/fonts/neuropolitical rg.ttf"
+      }
+    ]
+  }
+}
